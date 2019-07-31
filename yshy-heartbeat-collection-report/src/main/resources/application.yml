@@ -1,0 +1,15 @@
+server:
+  port: 9999
+
+# 数据库
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tx-manager?useUnicode=true&useSSL=false&characterEncoding=utf8
+    username: root
+    password: root
+
+# 主要是配置该属性
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+#  type-aliases-package: com.onfish.yshyheartbeatcollectionreport.entity
